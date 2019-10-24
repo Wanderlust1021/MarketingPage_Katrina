@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  html, body {
+    font-family: 'Reem Kufi', sans-serif;
+    
+  }
+  
+  body {
+    background-image: url("../images/daniel-klaffke-3-4zwGthXyI-unsplash.jpg");
+    background-color: #cccccc;
+   }
+  h1, h2, h3, h4, h5 {
+    font-family: 'Reem Kufi', sans-serif;
+    color: white;
+  }
+  
+  h2 {
+    font-size: 3.2rem;
+  }
+  
+  h3 {
+    font-size: 2.8rem;
+  }
+  
+  p {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+  
+  .container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;  
+  }
+
+
+.content-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home-content {
+    width: 48%;
+    display:flex;
+    flex-direction:column;
+}
+
+
+
+
+
+
+
+
+  //Button Styles
+  .custom-btn(){
+    display: block;
+    background-color:black;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: 100px;
+    height: 45px;
+    font-size: 2rem;
+    padding-right:1.3rem;
+    border-radius: 5px;
+    .custom-layout(flex-end,center);
+    color:white;
+
+    
+    @media @phone{
+        width:100%;
+        max-width:vw;
+        height:8rem;
+        justify-content:center;
+        align-items:center;
+
+    }
+
+    &:hover{
+        background-color:white;
+        color:black;
+    }
+    
+}
+
+.custom-layout(@justify, @align){
+    display:flex;
+    justify-content:@justify;
+    align-items:@align;
+}
