@@ -185,6 +185,12 @@ p {
   display: flex;
   justify-content: flex-end;
 }
+@media (max-width:500px) {
+  .content-container {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
 .home-content {
   width: 45%;
   margin: 2rem;
@@ -192,6 +198,12 @@ p {
   padding: 2rem;
   display: flex;
   flex-direction: column;
+}
+@media (max-width:500px) {
+  .home-content {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 .button {
   background-color: black;
@@ -236,6 +248,7 @@ p {
   justify-content: space-around;
   margin: 3.2rem;
   padding: 2rem;
+  padding-top: 5rem;
 }
 @media (max-width:500px) {
   .content-container3 {
