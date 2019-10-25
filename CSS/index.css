@@ -137,8 +137,7 @@ body {
   font-family: 'Reem Kufi', sans-serif;
 }
 body {
-  background-image: url("../images/daniel-klaffke-3-4zwGthXyI-unsplash.jpg");
-  background-color: #cccccc;
+  background-color: white;
 }
 h1,
 h2,
@@ -146,13 +145,18 @@ h3,
 h4,
 h5 {
   font-family: 'Reem Kufi', sans-serif;
-  color: white;
+  color: black;
 }
 h1 {
   font-size: 6.5rem;
 }
+@media (max-width:500px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+}
 h2 {
-  font-size: 3.2rem;
+  font-size: 3.3rem;
 }
 h3 {
   font-size: 2.8rem;
@@ -160,6 +164,15 @@ h3 {
 p {
   font-size: 1.6rem;
   line-height: 1.4;
+}
+.img {
+  width: 52%;
+  border-radius: 1%;
+}
+@media (max-width:500px) {
+  .img {
+    width: 100%;
+  }
 }
 .container {
   display: flex;
@@ -180,73 +193,82 @@ p {
   display: flex;
   flex-direction: column;
 }
-/* .custom-btn(){
-    display: block;
-    background-color:black;
-    margin: 0 10px 20px;
-    cursor: pointer;
-    width: 100px;
-    height: 45px;
-    font-size: 2rem;
-    padding-right:1.3rem;
-    border-radius: 5px;
-    .custom-layout(flex-end,center);
-    color:white;
-
-    
-    @media @phone{
-        width:100%;
-        max-width:vw;
-        height:8rem;
-        justify-content:center;
-        align-items:center;
-
-    }
-
-    &:hover{
-        background-color:white;
-        color:black;
-    }
-    
-}
-
-.custom-layout(@justify, @align){
-    display:flex;
-    justify-content:@justify;
-    align-items:@align;
-}
-*/
 .button {
   background-color: black;
+  border: 1px solid black;
   color: white;
-  padding: 14px 40px;
+  border-radius: 3%;
+  padding: 1.4rem 4rem;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  text-decoration: none;
   display: flex;
   justify-content: center;
-  font-size: 16px;
+  align-items: center;
+  font-size: 2rem;
   margin: 3rem;
+}
+.button:hover {
+  background-color: white;
+  color: black;
+}
+@media (max-width:500px) {
+  .button {
+    width: 100%;
+    max-width: vw;
+    height: 8rem;
+  }
 }
 .content-container2 {
   display: flex;
+  justify-content: space-around;
+  margin: 3.2rem;
+  padding: 2rem;
+}
+@media (max-width:500px) {
+  .content-container2 {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+.content-container3 {
+  display: flex;
+  justify-content: space-around;
+  margin: 3.2rem;
+  padding: 2rem;
+}
+@media (max-width:500px) {
+  .content-container3 {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+  }
 }
 .mark-content {
-  width: 45%;
+  width: 40%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  text-align: center;
   margin: 3rem;
   padding: 2rem;
+}
+@media (max-width:500px) {
+  .mark-content {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 .title-content {
   display: flex;
   justify-content: center;
 }
-/*  .btn {
-    
-        .custom-btn();
-        @media @phone{
-          margin:0 auto;
-        }
-      }
-    */
+@media (max-width:500px) {
+  .title-content {
+    width: 100%;
+    max-width: vw;
+    margin-bottom: 5.4rem;
+  }
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -271,6 +293,9 @@ nav h4,
 nav h5 {
   font-family: 'Reem Kufi', sans-serif;
   color: white;
+}
+nav .logoImg {
+  height: 2.5rem;
 }
 nav img {
   width: 50%;
