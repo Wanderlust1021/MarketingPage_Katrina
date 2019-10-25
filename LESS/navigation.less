@@ -2,12 +2,12 @@
 nav{
   display: flex;
   justify-content: space-between;
-  color: white;
+  color: @mainColor;
   max-width:vw;
   width:vw;
   text-align: center;
-  background-color: black;
-  border:1px solid black;
+  background-color: @secColor;
+  border:1px solid @secColor;
   margin-bottom: 3rem;
   
 
@@ -19,8 +19,11 @@ nav{
 
   h1, h2, h3, h4, h5 {
       font-family: 'Reem Kufi', sans-serif;
-      color:white;
+      color:@mainColor;
       
+    }
+    .logoImg{
+      height:2.5rem;
     }
   img{
     width:50%;
@@ -39,7 +42,7 @@ nav{
       
       font-size:1.4rem;
       font-family:'Reem Kufi', sans-serif;
-      color: white;
+      color: @mainColor;
       margin-top:2rem;
       margin-bottom:1rem;
       
@@ -56,7 +59,7 @@ nav{
         
       a{
           
-          color: white;
+          color: @mainColor;
           text-decoration:none;
           justify-content: flex-end;
           padding:1rem;
